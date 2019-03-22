@@ -23,11 +23,11 @@ class BaseReport(AbsoluteReport):
 
 NODE = platform.node()
 REMOTE = NODE.endswith(".scicore.unibas.ch") or NODE.endswith(".cluster.bc2.ch")
-BENCHMARKS_DIR = os.environ["DOWNWARD_BENCHMARKS"]
+BENCHMARKS_DIR = os.environ["OUR_BENCHMARKS"]
 if REMOTE:
     ENV = BaselSlurmEnvironment(email="my.name@unibas.ch")
 else:
-    ENV = LocalEnvironment(processes=10)
+    ENV = LocalEnvironment(processes=1)
 
 ## Suite examples
 # SUITE = [
@@ -65,7 +65,7 @@ for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
     # We could also use exp.add_resource().
     run.add_command(
         'run-planner',
-        ['1-bfws', '--domain', '{domain}', '--problem', '{problem}', 
+        ['bfws', '--domain', '{domain}', '--problem', '{problem}', 
             '--output', '', '--max_novelty', '1', '--k-BFWS', 'true'],
         time_limit=TIME_LIMIT,
         memory_limit=MEMORY_LIMIT)
