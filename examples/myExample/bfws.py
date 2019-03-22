@@ -39,7 +39,7 @@ else:
 #         "floortile-sat14-strips:p03-6-5-3.pddl", "floortile-sat14-strips:p04-6-5-3.pddl",
 #         "floortile-sat14-strips:p05-6-5-3.pddl"]
 
-SUITE = ["Floortile", "Transport", "Visitall"]
+SUITE = ["agricola", "Barman", "caldera", "caldera-split", "CaveDiving", "Childsnack", "CityCar", "data-network", "flashfill", "Floortile", "GED", "Hiking", "Maintenance", "nurikabe", "Openstacks", "organic-synthesis", "organic-synthesis-split", "Parking", "settlers", "snake", "spider", "termes", "Tetris", "Thoughtful", "Transport", "Visitall"]
 
 # 1. 'plan' removed, bfws store the plan as a file, 
 #   can be found in ./data/bfws/runs-xxxxx-xxxxx/x
