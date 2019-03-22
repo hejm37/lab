@@ -1,0 +1,13 @@
+{
+  "algorithm": "k-BFWS",
+  "domain": "floortile-sat14-strips",
+  "id": [
+    "k-BFWS",
+    "floortile-sat14-strips",
+    "p01-6-5-3.pddl"
+  ],
+  "memory_limit": 8192,
+  "problem": "p01-6-5-3.pddl",
+  "run_dir": "runs-00001-00100/00001",
+  "time_limit": 300
+}

@@ -1,0 +1,1028 @@
+<?xml version="1.0"
+      encoding="UTF-8"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>report</title>
+<meta name="generator" content="http://txt2tags.sf.net" />
+<style type="text/css">
+    body {
+        font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    }
+    blockquote {
+        margin: 1em 2em;
+        border-left: 2px solid #999;
+        font-style: oblique;
+        padding-left: 1em;
+    }
+    blockquote:first-letter {
+        margin: .2em .1em .1em 0;
+        font-size: 160%;
+        font-weight: bold;
+    }
+    blockquote:first-line {
+        font-weight: bold;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td, th {
+        <!--border: 1px solid #888;--> <!--Allow tables without borders-->
+        padding: 3px 7px 2px 7px;
+    }
+    th {
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        background-color: #aaa;
+        color: #ffffff;
+    }
+    hr.heavy {
+        height: 2px;
+        background-color: black;
+    }
+</style>
+<script type="text/javascript">
+function toggle_element(element) {
+    if (element.style.display == "none") {
+        element.style.display = "";
+    } else {
+        element.style.display = "none";
+    }
+}
+
+function find_next(element, classname) {
+    element = element.nextSibling;
+    while(element.nodeName != classname)
+        element = element.nextSibling;
+    return element;
+}
+
+function toggle_table(toggle_button) {
+    toggle_element(find_next(toggle_button, "TABLE"));
+    if (toggle_button.innerHTML == "Show table") {
+        toggle_button.innerHTML = "Hide table";
+    } else {
+        toggle_button.innerHTML = "Show table";
+    }
+}
+
+function show_table(link) {
+    var toggle_button = find_next(link, "BUTTON");
+    var table = find_next(toggle_button, "TABLE");
+    table.style.display = "";
+    toggle_button.innerHTML = "Hide table";
+}
+
+function show_overview_tables() {
+    var names = ["unexplained-errors", "info", "summary"];
+    for (var i = 0; i < names.length; i++) {
+        var link = document.getElementById(names[i]);
+        if (link) {
+            show_table(link);
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", show_overview_tables);
+</script>
+</head>
+<body>
+
+<div class="header" id="header">
+<h1>report</h1>
+<h3>2019-03-08</h3>
+</div>
+
+<div class="body" id="body">
+
+<ul>
+<li><b><a href="#info" onclick="show_table(document.getElementById('info'));">Info</a></b>
+</li>
+<li><b><a href="#summary" onclick="show_table(document.getElementById('summary'));">Summary</a></b>
+</li>
+<li><b><a href="#costs" onclick="show_table(document.getElementById('costs'));">costs</a></b>
+  <ul>
+  <li><a href="#costs-floortile-sat14-strips" onclick="show_table(document.getElementById('costs-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#coverage" onclick="show_table(document.getElementById('coverage'));">coverage</a></b>
+  <ul>
+  <li><a href="#coverage-floortile-sat14-strips" onclick="show_table(document.getElementById('coverage-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#error" onclick="show_table(document.getElementById('error'));">error</a></b>
+  <ul>
+  <li><a href="#error-error-plan-found" onclick="show_table(document.getElementById('error-error-plan-found'));">error-plan-found</a> <a href="#error-error-unsolvable-or-error" onclick="show_table(document.getElementById('error-error-unsolvable-or-error'));">error-unsolvable-or-error</a> <a href="#error-floortile-sat14-strips" onclick="show_table(document.getElementById('error-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#expanded" onclick="show_table(document.getElementById('expanded'));">expanded</a></b>
+  <ul>
+  <li><a href="#expanded-floortile-sat14-strips" onclick="show_table(document.getElementById('expanded-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#generated" onclick="show_table(document.getElementById('generated'));">generated</a></b>
+  <ul>
+  <li><a href="#generated-floortile-sat14-strips" onclick="show_table(document.getElementById('generated-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#time" onclick="show_table(document.getElementById('time'));">time</a></b>
+  <ul>
+  <li><a href="#time-floortile-sat14-strips" onclick="show_table(document.getElementById('time-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+<li><b><a href="#trivially_unsolvable" onclick="show_table(document.getElementById('trivially_unsolvable'));">trivially_unsolvable</a></b>
+  <ul>
+  <li><a href="#trivially_unsolvable-floortile-sat14-strips" onclick="show_table(document.getElementById('trivially_unsolvable-floortile-sat14-strips'));">floortile-sat14-strips</a>
+  </li>
+  </ul>
+</li>
+</ul>
+
+<a id="info" name="info"></a>
+<h1>info</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>algorithm</th>
+<th>time_<wbr>limit</th>
+<th>memory_<wbr>limit</th>
+</tr>
+<tr>
+<td>k-BFWS</td>
+<td align="right">300</td>
+<td align="right">4096</td>
+</tr>
+</table>
+
+<p>
+Used nodes: {nissan}
+</p>
+
+<a id="summary" name="summary"></a>
+<h1>summary</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>Summary</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#costs" onclick="show_table(document.getElementById('costs'));">costs - Sum</a></td>
+<td align="right"><span style="color:rgb(127,127,127)">92</span></td>
+</tr>
+<tr>
+<td><a href="#coverage" onclick="show_table(document.getElementById('coverage'));">coverage - Sum</a></td>
+<td align="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+<tr>
+<td><a href="#error-error-plan-found" onclick="show_table(document.getElementById('error-error-plan-found'));">error-plan-found - Sum</a></td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td><a href="#error-error-unsolvable-or-error" onclick="show_table(document.getElementById('error-error-unsolvable-or-error'));">error-unsolvable-or-error - Sum</a></td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td><a href="#expanded" onclick="show_table(document.getElementById('expanded'));">expanded - Sum</a></td>
+<td align="right"><span style="color:rgb(127,127,127)">28214761</span></td>
+</tr>
+<tr>
+<td><a href="#generated" onclick="show_table(document.getElementById('generated'));">generated - Geometric mean</a></td>
+<td align="right"><span style="color:rgb(127,127,127)">1418964.24</span></td>
+</tr>
+<tr>
+<td><a href="#trivially_unsolvable" onclick="show_table(document.getElementById('trivially_unsolvable'));">trivially_unsolvable - Sum</a></td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+</table>
+
+<a id="costs" name="costs"></a>
+<h1>costs</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>costs</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#costs-floortile-sat14-strips" onclick="show_table(document.getElementById('costs-floortile-sat14-strips'));">floortile-sat14-strips</a> (2)</td>
+<td align="right"><span style="color:rgb(127,127,127)">92</span></td>
+</tr>
+<tr>
+<td><b>Sum (2)</b></td>
+<td align="right"><span style="color:rgb(127,127,127)">92</span></td>
+</tr>
+</table>
+
+<p>
+Only instances where all algorithms have a value for "costs" are considered. Each table entry gives the sum of "costs" for that domain. The last row reports the sum across all domains.
+</p>
+
+<a id="costs-floortile-sat14-strips" name="costs-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>costs</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">50</span></td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">42</span></td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+</table>
+
+<a id="coverage" name="coverage"></a>
+<h1>coverage</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>coverage</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#coverage-floortile-sat14-strips" onclick="show_table(document.getElementById('coverage-floortile-sat14-strips'));">floortile-sat14-strips</a> (20)</td>
+<td align="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+<tr>
+<td><b>Sum (20)</b></td>
+<td align="right"><span style="color:rgb(127,127,127)">15</span></td>
+</tr>
+</table>
+
+<p>
+The last row reports the sum across all domains.
+</p>
+
+<a id="coverage-floortile-sat14-strips" name="coverage-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>coverage</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1</span></td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+</table>
+
+<a id="error" name="error"></a>
+<h1>error</h1>
+
+<a id="error-error-plan-found" name="error-error-plan-found"></a>
+<h2>error-plan-found</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>error-plan-found</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#error-floortile-sat14-strips" onclick="show_table(document.getElementById('error-floortile-sat14-strips'));">floortile-sat14-strips</a></td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td><b>Sum</b></td>
+<td align="right">15</td>
+</tr>
+</table>
+
+<a id="error-error-unsolvable-or-error" name="error-error-unsolvable-or-error"></a>
+<h2>error-unsolvable-or-error</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>error-unsolvable-or-error</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#error-floortile-sat14-strips" onclick="show_table(document.getElementById('error-floortile-sat14-strips'));">floortile-sat14-strips</a></td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td><b>Sum</b></td>
+<td align="right">5</td>
+</tr>
+</table>
+
+<a id="error-floortile-sat14-strips" name="error-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>error</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td>unsolvable-or-error</td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td>unsolvable-or-error</td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td>unsolvable-or-error</td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td>unsolvable-or-error</td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td>plan-found</td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td>unsolvable-or-error</td>
+</tr>
+</table>
+
+<a id="expanded" name="expanded"></a>
+<h1>expanded</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>expanded</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#expanded-floortile-sat14-strips" onclick="show_table(document.getElementById('expanded-floortile-sat14-strips'));">floortile-sat14-strips</a> (15)</td>
+<td align="right"><span style="color:rgb(127,127,127)">28214761</span></td>
+</tr>
+<tr>
+<td><b>Sum (15)</b></td>
+<td align="right"><span style="color:rgb(127,127,127)">28214761</span></td>
+</tr>
+</table>
+
+<p>
+Only instances where all algorithms have a value for "expanded" are considered. Each table entry gives the sum of "expanded" for that domain. The last row reports the sum across all domains.
+</p>
+
+<a id="expanded-floortile-sat14-strips" name="expanded-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>expanded</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">74754</span></td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">739641</span></td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">2012387</span></td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1489679</span></td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">3563220</span></td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">726950</span></td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1465916</span></td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">3525684</span></td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1324943</span></td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">3545065</span></td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">746816</span></td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1880679</span></td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">3437387</span></td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">45466</span></td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">3636174</span></td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+</table>
+
+<a id="generated" name="generated"></a>
+<h1>generated</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>generated</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#generated-floortile-sat14-strips" onclick="show_table(document.getElementById('generated-floortile-sat14-strips'));">floortile-sat14-strips</a> (15)</td>
+<td align="right"><span style="color:rgb(127,127,127)">1418964.24</span></td>
+</tr>
+<tr>
+<td><b>Geometric mean (15)</b></td>
+<td align="right"><span style="color:rgb(127,127,127)">1418964.24</span></td>
+</tr>
+</table>
+
+<p>
+Only instances where all algorithms have a value for "generated" are considered. Each table entry gives the geometric mean of "generated" for that domain. The last row reports the geometric mean across all domains.
+</p>
+
+<a id="generated-floortile-sat14-strips" name="generated-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>generated</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">101878</span></td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">889013</span></td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">2423724</span></td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1784674</span></td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">4238645</span></td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">882880</span></td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1737380</span></td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">4226392</span></td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">1587017</span></td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">4208326</span></td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">907873</span></td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">2262409</span></td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">4141901</span></td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">72075</span></td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">4317937</span></td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td><span style="color:rgb(127,127,127)">None</span></td>
+</tr>
+</table>
+
+<a id="time" name="time"></a>
+<h1>time</h1>
+
+<p>
+Domain-wise reports only support numeric attributes, but time has type list.
+</p>
+
+<a id="time-floortile-sat14-strips" name="time-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>time</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td>['1.58388']</td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td>['32.1981']</td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td>['120.239']</td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td>['82.8548']</td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td>['263.667']</td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td>['32.4152']</td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td>['80.2201']</td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td>['264.058']</td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td>['72.5431']</td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td>['269.607']</td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td>['33.5475']</td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td>['116.903']</td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td>['261.598']</td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td>['0.890701']</td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td>['282.29']</td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td>[]</td>
+</tr>
+</table>
+
+<a id="trivially_unsolvable" name="trivially_unsolvable"></a>
+<h1>trivially_unsolvable</h1>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>trivially_<wbr>unsolvable</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td><a href="#trivially_unsolvable-floortile-sat14-strips" onclick="show_table(document.getElementById('trivially_unsolvable-floortile-sat14-strips'));">floortile-sat14-strips</a> (20)</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td><b>Sum (20)</b></td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+</table>
+
+<p>
+Only instances where all algorithms have a value for "trivially_unsolvable" are considered. Each table entry gives the sum of "trivially_unsolvable" for that domain. The last row reports the sum across all domains.
+</p>
+
+<a id="trivially_unsolvable-floortile-sat14-strips" name="trivially_unsolvable-floortile-sat14-strips"></a>
+<h2>floortile-sat14-strips</h2>
+
+<button type="button" class="toggle-table" onclick="toggle_table(this)">Show table</button><p></p>
+
+<table border="1" style="display:none">
+<tr>
+<th>trivially_<wbr>unsolvable</th>
+<th>k-BFWS</th>
+</tr>
+<tr>
+<td>p01-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p01-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p01-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p01-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p01-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p01-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p02-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p02-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p02-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p02-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p03-6-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p03-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p03-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p04-5-4-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p04-5-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p04-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p04-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p05-4-3-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p05-6-5-2.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+<tr>
+<td>p05-6-5-3.pddl</td>
+<td align="right"><span style="color:rgb(127,127,127)">0</span></td>
+</tr>
+</table>
+
+</div>
+<!-- xhtml code generated by txt2tags 2.6b (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags  -->
+</body></html>

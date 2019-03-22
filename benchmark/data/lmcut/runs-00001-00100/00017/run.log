@@ -1,0 +1,110 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.99s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.006s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.006s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 61 rules.
+Computing model... [0.120s CPU, 0.119s wall-clock]
+3633 relevant atoms
+2016 auxiliary atoms
+5649 final queue length
+13091 total queue pushes
+Completing instantiation... [0.240s CPU, 0.243s wall-clock]
+Instantiating: [0.370s CPU, 0.376s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.012s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+42 uncovered facts
+Choosing groups: [0.000s CPU, 0.003s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.030s CPU, 0.033s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.012s wall-clock]
+Translating task: [0.270s CPU, 0.269s wall-clock]
+3930 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+56 propositions removed
+Detecting unreachable propositions: [0.120s CPU, 0.125s wall-clock]
+Reordering and filtering variables...
+50 of 50 variables necessary.
+36 of 50 mutex groups necessary.
+2938 of 2938 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.050s CPU, 0.045s wall-clock]
+Translator variables: 50
+Translator derived variables: 0
+Translator facts: 408
+Translator goal facts: 7
+Translator mutex groups: 36
+Translator total mutex groups size: 556
+Translator operators: 2938
+Translator axioms: 0
+Translator task size: 26125
+Translator peak memory: 78104 KB
+Writing output... [0.040s CPU, 0.040s wall-clock]
+Done! [0.910s CPU, 0.905s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299.06s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.426e-05s]
+done reading input! [t=0.025229s]
+Initializing blind search heuristic...
+Building successor generator...done! [t=0.0284459s]
+peak memory difference for successor generator creation: 408 KB
+time for successor generation creation: 0.00191005s
+Variables: 50
+FactPairs: 408
+Bytes per state: 16
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for blind: 1
+[g=0, 1 evaluated, 0 expanded, t=0.0286416s, 23880 KB]
+f = 1 [1 evaluated, 0 expanded, t=0.0286732s, 23880 KB]
+Initial heuristic value for blind: 1
+pruning method: none
+f = 2 [26 evaluated, 1 expanded, t=0.028763s, 23880 KB]
+f = 3 [317 evaluated, 26 expanded, t=0.0295051s, 23880 KB]
+f = 4 [2474 evaluated, 317 expanded, t=0.0358133s, 23880 KB]
+f = 5 [14383 evaluated, 2474 expanded, t=0.0758236s, 24476 KB]
+f = 6 [68979 evaluated, 14383 expanded, t=0.215922s, 27500 KB]
+f = 7 [291981 evaluated, 68979 expanded, t=0.785962s, 39000 KB]
+f = 8 [1131304 evaluated, 291981 expanded, t=3.23173s, 83364 KB]
+f = 9 [4085356 evaluated, 1131304 expanded, t=12.7127s, 255720 KB]
+f = 10 [13916808 evaluated, 4085356 expanded, t=47.1864s, 937076 KB]
+f = 11 [45126427 evaluated, 13916808 expanded, t=166.153s, 2271884 KB]
+Peak memory: 4042828 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+
+search exit code: 23
+Driver aborting after search
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

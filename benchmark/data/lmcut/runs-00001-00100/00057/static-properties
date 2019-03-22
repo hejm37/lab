@@ -1,0 +1,32 @@
+{
+  "algorithm": "ff",
+  "build_options": [],
+  "component_options": [
+    "--search",
+    "lazy_greedy([ff()])"
+  ],
+  "domain": "depot",
+  "driver_options": [
+    "--validate",
+    "--overall-time-limit",
+    "30m",
+    "--overall-memory-limit",
+    "3584M",
+    "--overall-time-limit",
+    "5m",
+    "--overall-memory-limit",
+    "8192M"
+  ],
+  "experiment_name": "lmcut",
+  "global_revision": "282538f969a9",
+  "id": [
+    "ff",
+    "depot",
+    "p13.pddl"
+  ],
+  "local_revision": "default",
+  "problem": "p13.pddl",
+  "repo": "/home/harry/Desktop/planning/ipc2018/planners/fast-downward",
+  "revision_summary": "282538f969a9 tip",
+  "run_dir": "runs-00001-00100/00057"
+}

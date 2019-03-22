@@ -1,0 +1,22 @@
+{
+  "coverage": 1,
+  "error": "plan-found",
+  "evaluations": 5,
+  "node": "nissan",
+  "plan": [
+    "UP F0 F1",
+    "BOARD F1 P0",
+    "DOWN F1 F0",
+    "DEPART F0 P0"
+  ],
+  "planner_exit_code": 0,
+  "times": [
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00"
+  ],
+  "trivially_unsolvable": 0
+}

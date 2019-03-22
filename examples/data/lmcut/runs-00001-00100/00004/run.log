@@ -1,0 +1,162 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1799.99s
+INFO     translator memory limit: 3584 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/examples/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.004s wall-clock]
+Preparing model... [0.010s CPU, 0.002s wall-clock]
+Generated 61 rules.
+Computing model... [0.000s CPU, 0.006s wall-clock]
+181 relevant atoms
+255 auxiliary atoms
+436 final queue length
+594 total queue pushes
+Completing instantiation... [0.010s CPU, 0.006s wall-clock]
+Instantiating: [0.020s CPU, 0.018s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.009s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+14 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.012s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.010s CPU, 0.005s wall-clock]
+72 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+18 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.003s wall-clock]
+Reordering and filtering variables...
+14 of 14 variables necessary.
+10 of 14 mutex groups necessary.
+72 of 72 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 14
+Translator derived variables: 0
+Translator facts: 48
+Translator goal facts: 2
+Translator mutex groups: 10
+Translator total mutex groups size: 48
+Translator operators: 72
+Translator axioms: 0
+Translator task size: 622
+Translator peak memory: 57372 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.040s CPU, 0.044s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1799.93s
+INFO     search memory limit: 3584 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/examples/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.264e-05s]
+done reading input! [t=0.00041438s]
+Initializing landmark cut heuristic...
+Building successor generator...done! [t=0.00128932s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 3.385e-05s
+Variables: 14
+FactPairs: 48
+Bytes per state: 4
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for lmcut: 9
+[g=0, 1 evaluated, 0 expanded, t=0.0014051s, 22144 KB]
+f = 9 [1 evaluated, 0 expanded, t=0.00142445s, 22144 KB]
+Initial heuristic value for lmcut: 9
+pruning method: none
+New best heuristic value for lmcut: 8
+[g=1, 6 evaluated, 1 expanded, t=0.00155079s, 22144 KB]
+New best heuristic value for lmcut: 7
+[g=2, 10 evaluated, 2 expanded, t=0.00164954s, 22144 KB]
+New best heuristic value for lmcut: 6
+[g=3, 18 evaluated, 3 expanded, t=0.00180712s, 22144 KB]
+f = 10 [26 evaluated, 5 expanded, t=0.00196031s, 22144 KB]
+New best heuristic value for lmcut: 5
+[g=5, 27 evaluated, 6 expanded, t=0.00199675s, 22144 KB]
+New best heuristic value for lmcut: 4
+[g=6, 32 evaluated, 7 expanded, t=0.00209048s, 22144 KB]
+New best heuristic value for lmcut: 3
+[g=7, 36 evaluated, 8 expanded, t=0.00215858s, 22144 KB]
+New best heuristic value for lmcut: 2
+[g=8, 40 evaluated, 9 expanded, t=0.00222198s, 22144 KB]
+New best heuristic value for lmcut: 1
+[g=9, 49 evaluated, 10 expanded, t=0.00230697s, 22144 KB]
+New best heuristic value for lmcut: 0
+[g=10, 56 evaluated, 11 expanded, t=0.0023628s, 22144 KB]
+Solution found!
+Actual search time: 0.0009382s [t=0.002383s]
+lift hoist0 crate1 pallet0 depot0 (1)
+load hoist0 crate1 truck1 depot0 (1)
+lift hoist1 crate0 pallet1 distributor0 (1)
+drive truck1 depot0 distributor0 (1)
+load hoist1 crate0 truck1 distributor0 (1)
+unload hoist1 crate1 truck1 distributor0 (1)
+drive truck1 distributor0 distributor1 (1)
+unload hoist2 crate0 truck1 distributor1 (1)
+drop hoist1 crate1 pallet1 distributor0 (1)
+drop hoist2 crate0 pallet2 distributor1 (1)
+Plan length: 10 step(s).
+Plan cost: 10
+Expanded 12 state(s).
+Reopened 0 state(s).
+Evaluated 56 state(s).
+Evaluations: 56
+Generated 72 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 5 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 26 state(s).
+Generated until last jump: 32 state(s).
+Number of registered states: 56
+Int hash set load factor: 56/64 = 0.875
+Int hash set resizes: 6
+Search time: 0.00103247s
+Total time: 0.00238529s
+Solution found.
+Peak memory: 22144 KB
+Remove intermediate file output.sas
+
+search exit code: 0
+INFO     Running validate.
+INFO     validate stdin: None
+INFO     validate time limit: None
+INFO     validate memory limit: None
+INFO     validate command line string: validate domain.pddl problem.pddl sas_plan
+Checking plan: sas_plan
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ sas_plan 10 
+
+
+validate exit code: 0
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

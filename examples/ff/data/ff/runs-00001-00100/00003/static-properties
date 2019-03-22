@@ -1,0 +1,13 @@
+{
+  "algorithm": "ff",
+  "domain": "grid",
+  "id": [
+    "ff",
+    "grid",
+    "prob03.pddl"
+  ],
+  "memory_limit": 2048,
+  "problem": "prob03.pddl",
+  "run_dir": "runs-00001-00100/00003",
+  "time_limit": 1800
+}

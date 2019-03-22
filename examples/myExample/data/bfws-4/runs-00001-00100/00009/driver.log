@@ -1,0 +1,5 @@
+2019-03-08 22:03:48,681 INFO     node: nissan
+2019-03-08 22:08:16,431 INFO     run-planner wall-clock time: 267.75s
+2019-03-08 22:08:16,432 INFO     run-planner exit code: 0
+2019-03-08 22:08:16,458 INFO     bfws_parser wall-clock time: 0.03s
+2019-03-08 22:08:16,458 INFO     bfws_parser exit code: 0

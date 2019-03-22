@@ -1,0 +1,350 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.98s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 61 rules.
+Computing model... [0.120s CPU, 0.122s wall-clock]
+4969 relevant atoms
+4045 auxiliary atoms
+9014 final queue length
+19546 total queue pushes
+Completing instantiation... [0.340s CPU, 0.334s wall-clock]
+Instantiating: [0.470s CPU, 0.465s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.020s CPU, 0.017s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+47 uncovered facts
+Choosing groups: [0.010s CPU, 0.004s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.040s CPU, 0.043s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.016s wall-clock]
+Translating task: [0.360s CPU, 0.354s wall-clock]
+5910 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+64 propositions removed
+Detecting unreachable propositions: [0.190s CPU, 0.193s wall-clock]
+Reordering and filtering variables...
+63 of 63 variables necessary.
+46 of 63 mutex groups necessary.
+3990 of 3990 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.070s CPU, 0.065s wall-clock]
+Translator variables: 63
+Translator derived variables: 0
+Translator facts: 659
+Translator goal facts: 15
+Translator mutex groups: 46
+Translator total mutex groups size: 811
+Translator operators: 3990
+Translator axioms: 0
+Translator task size: 37848
+Translator peak memory: 86416 KB
+Writing output... [0.060s CPU, 0.057s wall-clock]
+Done! [1.200s CPU, 1.196s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 298.76s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'lazy_greedy([ff()])' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.594e-05s]
+done reading input! [t=0.0339495s]
+Simplifying 18630 unary operators... done! [18630 unary operators]
+time to simplify: 0.0225214s
+Initializing additive heuristic...
+Initializing FF heuristic...
+Building successor generator...done! [t=0.0628544s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.00200529s
+Variables: 63
+FactPairs: 659
+Bytes per state: 20
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for ff: 50
+[g=0, 1 evaluated, 0 expanded, t=0.0633977s, 27192 KB]
+Initial heuristic value for ff: 50
+New best heuristic value for ff: 49
+[g=1, 6 evaluated, 5 expanded, t=0.0651278s, 27192 KB]
+New best heuristic value for ff: 47
+[g=3, 51 evaluated, 50 expanded, t=0.0806802s, 27192 KB]
+New best heuristic value for ff: 46
+[g=7, 364 evaluated, 363 expanded, t=0.189334s, 27192 KB]
+New best heuristic value for ff: 44
+[g=11, 756 evaluated, 755 expanded, t=0.303413s, 27192 KB]
+New best heuristic value for ff: 43
+[g=13, 801 evaluated, 800 expanded, t=0.316311s, 27192 KB]
+New best heuristic value for ff: 41
+[g=17, 1400 evaluated, 1399 expanded, t=0.486689s, 27192 KB]
+New best heuristic value for ff: 40
+[g=19, 1441 evaluated, 1440 expanded, t=0.498547s, 27192 KB]
+New best heuristic value for ff: 39
+[g=23, 2162 evaluated, 2161 expanded, t=0.707975s, 27192 KB]
+New best heuristic value for ff: 38
+[g=25, 2181 evaluated, 2180 expanded, t=0.713532s, 27192 KB]
+New best heuristic value for ff: 36
+[g=30, 2741 evaluated, 2740 expanded, t=0.87196s, 27192 KB]
+New best heuristic value for ff: 34
+[g=32, 2826 evaluated, 2825 expanded, t=0.894911s, 27192 KB]
+New best heuristic value for ff: 33
+[g=33, 2832 evaluated, 2831 expanded, t=0.896568s, 27192 KB]
+New best heuristic value for ff: 32
+[g=34, 2833 evaluated, 2832 expanded, t=0.896888s, 27192 KB]
+New best heuristic value for ff: 31
+[g=35, 2838 evaluated, 2837 expanded, t=0.898407s, 27192 KB]
+New best heuristic value for ff: 30
+[g=36, 2839 evaluated, 2838 expanded, t=0.898734s, 27192 KB]
+New best heuristic value for ff: 29
+[g=37, 2850 evaluated, 2849 expanded, t=0.902032s, 27192 KB]
+New best heuristic value for ff: 28
+[g=38, 2863 evaluated, 2862 expanded, t=0.9057s, 27192 KB]
+New best heuristic value for ff: 27
+[g=44, 3670 evaluated, 3669 expanded, t=1.13631s, 27192 KB]
+New best heuristic value for ff: 25
+[g=46, 3688 evaluated, 3687 expanded, t=1.14173s, 27192 KB]
+New best heuristic value for ff: 24
+[g=49, 3773 evaluated, 3772 expanded, t=1.16571s, 27192 KB]
+New best heuristic value for ff: 22
+[g=51, 4311 evaluated, 4310 expanded, t=1.31359s, 27192 KB]
+New best heuristic value for ff: 21
+[g=67, 218141 evaluated, 218140 expanded, t=61.9598s, 64408 KB]
+New best heuristic value for ff: 20
+[g=68, 218149 evaluated, 218148 expanded, t=61.9622s, 64408 KB]
+New best heuristic value for ff: 19
+[g=69, 218161 evaluated, 218160 expanded, t=61.9657s, 64408 KB]
+New best heuristic value for ff: 18
+[g=70, 218174 evaluated, 218173 expanded, t=61.9694s, 64408 KB]
+New best heuristic value for ff: 17
+[g=71, 218184 evaluated, 218183 expanded, t=61.9723s, 64408 KB]
+New best heuristic value for ff: 16
+[g=72, 218192 evaluated, 218191 expanded, t=61.9745s, 64408 KB]
+New best heuristic value for ff: 15
+[g=73, 218210 evaluated, 218209 expanded, t=61.9794s, 64408 KB]
+New best heuristic value for ff: 14
+[g=74, 218229 evaluated, 218228 expanded, t=61.9843s, 64408 KB]
+New best heuristic value for ff: 12
+[g=107, 475762 evaluated, 475761 expanded, t=135.325s, 111856 KB]
+New best heuristic value for ff: 11
+[g=114, 483296 evaluated, 483295 expanded, t=137.387s, 112528 KB]
+New best heuristic value for ff: 9
+[g=120, 484694 evaluated, 484693 expanded, t=137.757s, 112792 KB]
+New best heuristic value for ff: 8
+[g=131, 516400 evaluated, 516399 expanded, t=146.182s, 118312 KB]
+New best heuristic value for ff: 6
+[g=134, 516522 evaluated, 516521 expanded, t=146.216s, 118312 KB]
+New best heuristic value for ff: 4
+[g=140, 518213 evaluated, 518212 expanded, t=146.603s, 118580 KB]
+New best heuristic value for ff: 3
+[g=141, 518216 evaluated, 518215 expanded, t=146.604s, 118580 KB]
+New best heuristic value for ff: 2
+[g=142, 518228 evaluated, 518227 expanded, t=146.606s, 118580 KB]
+New best heuristic value for ff: 1
+[g=143, 518234 evaluated, 518233 expanded, t=146.607s, 118580 KB]
+Solution found!
+Actual search time: 146.545s [t=146.608s]
+drive truck1 distributor2 distributor1 (1)
+lift hoist4 crate12 crate10 distributor1 (1)
+load hoist4 crate12 truck1 distributor1 (1)
+drive truck0 distributor1 depot0 (1)
+drive truck1 distributor1 depot1 (1)
+lift hoist1 crate4 pallet6 depot1 (1)
+drop hoist1 crate4 crate7 depot1 (1)
+drive truck1 depot1 distributor0 (1)
+lift hoist3 crate9 pallet7 distributor0 (1)
+load hoist3 crate9 truck1 distributor0 (1)
+drive truck1 distributor0 depot1 (1)
+unload hoist1 crate9 truck1 depot1 (1)
+drop hoist1 crate9 crate4 depot1 (1)
+drive truck1 depot1 distributor2 (1)
+lift hoist5 crate11 crate5 distributor2 (1)
+load hoist5 crate11 truck1 distributor2 (1)
+drive truck1 distributor2 depot1 (1)
+unload hoist1 crate11 truck1 depot1 (1)
+lift hoist4 crate10 crate1 distributor1 (1)
+drop hoist1 crate11 crate9 depot1 (1)
+drop hoist4 crate10 crate1 distributor1 (1)
+drive truck1 depot1 distributor2 (1)
+unload hoist5 crate12 truck1 distributor2 (1)
+drive truck1 distributor2 depot0 (1)
+drive truck0 depot0 distributor0 (1)
+drive truck1 depot0 depot2 (1)
+lift hoist2 crate13 crate3 depot2 (1)
+load hoist2 crate13 truck1 depot2 (1)
+lift hoist2 crate3 crate2 depot2 (1)
+load hoist2 crate3 truck1 depot2 (1)
+lift hoist2 crate2 pallet8 depot2 (1)
+load hoist2 crate2 truck1 depot2 (1)
+unload hoist2 crate13 truck1 depot2 (1)
+drive truck1 depot2 depot0 (1)
+unload hoist0 crate2 truck1 depot0 (1)
+drive truck1 depot0 depot1 (1)
+drop hoist0 crate2 pallet0 depot0 (1)
+drop hoist2 crate13 pallet8 depot2 (1)
+drive truck1 depot1 distributor1 (1)
+lift hoist4 crate10 crate1 distributor1 (1)
+load hoist4 crate10 truck1 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+unload hoist1 crate10 truck1 depot1 (1)
+lift hoist4 crate1 pallet4 distributor1 (1)
+drive truck1 depot1 distributor1 (1)
+load hoist4 crate1 truck1 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+drop hoist1 crate10 crate11 depot1 (1)
+unload hoist1 crate1 truck1 depot1 (1)
+lift hoist3 crate8 pallet3 distributor0 (1)
+drop hoist3 crate8 pallet7 distributor0 (1)
+drive truck0 distributor0 distributor2 (1)
+load hoist5 crate12 truck0 distributor2 (1)
+lift hoist5 crate5 crate0 distributor2 (1)
+load hoist5 crate5 truck0 distributor2 (1)
+drive truck0 distributor2 distributor0 (1)
+unload hoist3 crate5 truck0 distributor0 (1)
+drop hoist3 crate5 crate8 distributor0 (1)
+unload hoist3 crate12 truck0 distributor0 (1)
+drive truck0 distributor0 distributor2 (1)
+lift hoist5 crate0 pallet5 distributor2 (1)
+load hoist5 crate0 truck0 distributor2 (1)
+drive truck0 distributor2 distributor0 (1)
+load hoist3 crate12 truck0 distributor0 (1)
+lift hoist3 crate5 crate8 distributor0 (1)
+load hoist3 crate5 truck0 distributor0 (1)
+drive truck0 distributor0 distributor2 (1)
+unload hoist5 crate5 truck0 distributor2 (1)
+drop hoist5 crate5 pallet5 distributor2 (1)
+unload hoist5 crate12 truck0 distributor2 (1)
+drive truck0 distributor2 distributor0 (1)
+unload hoist3 crate0 truck0 distributor0 (1)
+drop hoist5 crate12 crate5 distributor2 (1)
+drop hoist3 crate0 crate8 distributor0 (1)
+drop hoist1 crate1 pallet6 depot1 (1)
+lift hoist1 crate10 crate11 depot1 (1)
+load hoist1 crate10 truck1 depot1 (1)
+lift hoist1 crate11 crate9 depot1 (1)
+drop hoist1 crate11 crate1 depot1 (1)
+unload hoist1 crate10 truck1 depot1 (1)
+drop hoist1 crate10 crate9 depot1 (1)
+lift hoist1 crate11 crate1 depot1 (1)
+drop hoist1 crate11 crate10 depot1 (1)
+lift hoist1 crate1 pallet6 depot1 (1)
+load hoist1 crate1 truck1 depot1 (1)
+lift hoist1 crate11 crate10 depot1 (1)
+drop hoist1 crate11 pallet6 depot1 (1)
+lift hoist1 crate10 crate9 depot1 (1)
+drop hoist1 crate10 crate11 depot1 (1)
+unload hoist1 crate1 truck1 depot1 (1)
+drop hoist1 crate1 crate10 depot1 (1)
+lift hoist1 crate9 crate4 depot1 (1)
+load hoist1 crate9 truck1 depot1 (1)
+lift hoist1 crate4 crate7 depot1 (1)
+drop hoist1 crate4 crate1 depot1 (1)
+unload hoist1 crate9 truck1 depot1 (1)
+drop hoist1 crate9 crate4 depot1 (1)
+lift hoist1 crate7 crate6 depot1 (1)
+load hoist1 crate7 truck1 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist4 crate7 truck1 distributor1 (1)
+drop hoist4 crate7 pallet4 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+lift hoist1 crate6 pallet1 depot1 (1)
+load hoist1 crate6 truck1 depot1 (1)
+unload hoist1 crate3 truck1 depot1 (1)
+drop hoist1 crate3 pallet1 depot1 (1)
+lift hoist1 crate9 crate4 depot1 (1)
+drop hoist1 crate9 crate3 depot1 (1)
+lift hoist1 crate4 crate1 depot1 (1)
+load hoist1 crate4 truck1 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist4 crate4 truck1 distributor1 (1)
+drop hoist4 crate4 crate7 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+lift hoist1 crate9 crate3 depot1 (1)
+load hoist1 crate9 truck1 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist4 crate9 truck1 distributor1 (1)
+drop hoist4 crate9 crate4 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+lift hoist1 crate1 crate10 depot1 (1)
+load hoist1 crate1 truck1 depot1 (1)
+lift hoist1 crate10 crate11 depot1 (1)
+drop hoist1 crate10 crate3 depot1 (1)
+unload hoist1 crate1 truck1 depot1 (1)
+drop hoist1 crate1 crate10 depot1 (1)
+lift hoist1 crate11 pallet6 depot1 (1)
+load hoist1 crate11 truck1 depot1 (1)
+unload hoist1 crate6 truck1 depot1 (1)
+drop hoist1 crate6 pallet6 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist4 crate11 truck1 distributor1 (1)
+drop hoist4 crate11 crate9 distributor1 (1)
+drive truck1 distributor1 depot1 (1)
+lift hoist1 crate1 crate10 depot1 (1)
+load hoist1 crate1 truck1 depot1 (1)
+lift hoist1 crate10 crate3 depot1 (1)
+load hoist1 crate10 truck1 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist4 crate10 truck1 distributor1 (1)
+drop hoist4 crate10 crate11 distributor1 (1)
+unload hoist4 crate1 truck1 distributor1 (1)
+drop hoist4 crate1 crate10 distributor1 (1)
+Plan length: 144 step(s).
+Plan cost: 144
+Expanded 518245 state(s).
+Reopened 0 state(s).
+Evaluated 518246 state(s).
+Evaluations: 518246
+Generated 9594530 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 518246
+Int hash set load factor: 518246/1048576 = 0.494238
+Int hash set resizes: 20
+Search time: 146.545s
+Total time: 146.608s
+Solution found.
+Peak memory: 118712 KB
+Remove intermediate file output.sas
+
+search exit code: 0
+INFO     Running validate.
+INFO     validate stdin: None
+INFO     validate time limit: None
+INFO     validate memory limit: None
+INFO     validate command line string: validate domain.pddl problem.pddl sas_plan
+Checking plan: sas_plan
+Plan executed successfully - checking goal
+Plan valid
+Final value: 144 
+
+Successful plans:
+Value: 144
+ sas_plan 144 
+
+
+validate exit code: 0
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

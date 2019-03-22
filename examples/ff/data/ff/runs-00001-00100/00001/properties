@@ -1,0 +1,32 @@
+{
+  "coverage": 1,
+  "error": "plan-found",
+  "evaluations": 20,
+  "node": "nissan",
+  "plan": [
+    "MOVE NODE2-4 NODE1-4",
+    "MOVE NODE1-4 NODE0-4",
+    "MOVE NODE0-4 NODE0-3",
+    "MOVE NODE0-3 NODE0-2",
+    "PICKUP NODE0-2 KEY3",
+    "MOVE NODE0-2 NODE0-3",
+    "MOVE NODE0-3 NODE1-3",
+    "UNLOCK NODE1-3 NODE2-3 KEY3 SQUARE",
+    "MOVE NODE1-3 NODE2-3",
+    "PICKUP-AND-LOOSE NODE2-3 KEY0 KEY3",
+    "MOVE NODE2-3 NODE1-3",
+    "MOVE NODE1-3 NODE1-2",
+    "MOVE NODE1-2 NODE1-1",
+    "PUTDOWN NODE1-1 KEY0"
+  ],
+  "planner_exit_code": 0,
+  "times": [
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00"
+  ],
+  "trivially_unsolvable": 0
+}

@@ -1,0 +1,44 @@
+
+ff: parsing domain file
+domain 'GRIPPER-STRIPS' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-GRIPPER-X-1' defined
+ ... done.
+
+
+
+Cueing down from goal distance:    9 into depth [1]
+                                   8            [1]
+                                   7            [1][2]
+                                   6            [1]
+                                   5            [1][2]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: PICK BALL4 ROOMA LEFT
+        1: PICK BALL3 ROOMA RIGHT
+        2: MOVE ROOMA ROOMB
+        3: DROP BALL4 ROOMB LEFT
+        4: DROP BALL3 ROOMB RIGHT
+        5: MOVE ROOMB ROOMA
+        6: PICK BALL2 ROOMA LEFT
+        7: PICK BALL1 ROOMA RIGHT
+        8: MOVE ROOMA ROOMB
+        9: DROP BALL2 ROOMB LEFT
+       10: DROP BALL1 ROOMB RIGHT
+     
+
+time spent:    0.00 seconds instantiating 36 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 20 facts and 36 actions
+               0.00 seconds creating final representation with 20 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 16 states, to a max depth of 2
+               0.00 seconds total time
+
+Running FF parser

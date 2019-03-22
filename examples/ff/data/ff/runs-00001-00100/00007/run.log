@@ -1,0 +1,31 @@
+
+ff: parsing domain file
+domain 'MICONIC' defined
+ ... done.
+ff: parsing problem file
+problem 'MIXED-F2-P1-U0-V0-G0-A0-N0-A0-B0-N0-F0-R0' defined
+ ... done.
+
+
+
+Cueing down from goal distance:    3 into depth [1][2]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: UP F0 F1
+        1: BOARD F1 P0
+        2: DOWN F1 F0
+        3: DEPART F0 P0
+     
+
+time spent:    0.00 seconds instantiating 4 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 4 facts and 4 actions
+               0.00 seconds creating final representation with 4 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 5 states, to a max depth of 2
+               0.00 seconds total time
+
+Running FF parser

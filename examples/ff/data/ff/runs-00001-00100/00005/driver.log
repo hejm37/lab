@@ -1,0 +1,5 @@
+2019-03-05 13:52:51,582 INFO     node: nissan
+2019-03-05 13:52:52,010 INFO     run-planner wall-clock time: 0.43s
+2019-03-05 13:52:52,010 INFO     run-planner exit code: 0
+2019-03-05 13:52:52,036 INFO     ff_parser wall-clock time: 0.03s
+2019-03-05 13:52:52,037 INFO     ff_parser exit code: 0

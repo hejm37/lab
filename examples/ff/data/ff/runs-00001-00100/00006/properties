@@ -1,0 +1,29 @@
+{
+  "coverage": 1,
+  "error": "plan-found",
+  "evaluations": 16,
+  "node": "nissan",
+  "plan": [
+    "PICK BALL4 ROOMA LEFT",
+    "PICK BALL3 ROOMA RIGHT",
+    "MOVE ROOMA ROOMB",
+    "DROP BALL4 ROOMB LEFT",
+    "DROP BALL3 ROOMB RIGHT",
+    "MOVE ROOMB ROOMA",
+    "PICK BALL2 ROOMA LEFT",
+    "PICK BALL1 ROOMA RIGHT",
+    "MOVE ROOMA ROOMB",
+    "DROP BALL2 ROOMB LEFT",
+    "DROP BALL1 ROOMB RIGHT"
+  ],
+  "planner_exit_code": 0,
+  "times": [
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00",
+    "0.00"
+  ],
+  "trivially_unsolvable": 0
+}

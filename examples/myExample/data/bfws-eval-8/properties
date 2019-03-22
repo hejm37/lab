@@ -1,0 +1,97 @@
+{
+  "k-BFWS-floortile-sat14-strips-p01-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-6-5-3.pddl"
+    ],
+    "memory_limit": 8192,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p01-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p02-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p02-6-5-3.pddl"
+    ],
+    "memory_limit": 8192,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p02-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p03-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p03-6-5-3.pddl"
+    ],
+    "memory_limit": 8192,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p03-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p04-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p04-6-5-3.pddl"
+    ],
+    "memory_limit": 8192,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p04-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p05-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p05-6-5-3.pddl"
+    ],
+    "memory_limit": 8192,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p05-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  }
+}

@@ -1,0 +1,212 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.98s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.005s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.006s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 61 rules.
+Computing model... [0.070s CPU, 0.064s wall-clock]
+1855 relevant atoms
+1216 auxiliary atoms
+3071 final queue length
+6453 total queue pushes
+Completing instantiation... [0.130s CPU, 0.139s wall-clock]
+Instantiating: [0.210s CPU, 0.215s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.009s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.008s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+38 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.030s CPU, 0.023s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.005s wall-clock]
+Translating task: [0.130s CPU, 0.123s wall-clock]
+1788 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+48 propositions removed
+Detecting unreachable propositions: [0.050s CPU, 0.051s wall-clock]
+Reordering and filtering variables...
+38 of 38 variables necessary.
+28 of 38 mutex groups necessary.
+1404 of 1404 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.020s CPU, 0.020s wall-clock]
+Translator variables: 38
+Translator derived variables: 0
+Translator facts: 240
+Translator goal facts: 5
+Translator mutex groups: 28
+Translator total mutex groups size: 316
+Translator operators: 1404
+Translator axioms: 0
+Translator task size: 12119
+Translator peak memory: 66836 KB
+Writing output... [0.020s CPU, 0.018s wall-clock]
+Done! [0.460s CPU, 0.463s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299.48s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'lazy_greedy([ff()])' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.303e-05s]
+done reading input! [t=0.011397s]
+Simplifying 5676 unary operators... done! [5676 unary operators]
+time to simplify: 0.0060659s
+Initializing additive heuristic...
+Initializing FF heuristic...
+Building successor generator...done! [t=0.0206137s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.00076037s
+Variables: 38
+FactPairs: 240
+Bytes per state: 12
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for ff: 27
+[g=0, 1 evaluated, 0 expanded, t=0.020893s, 23580 KB]
+Initial heuristic value for ff: 27
+New best heuristic value for ff: 26
+[g=1, 6 evaluated, 5 expanded, t=0.0214417s, 23580 KB]
+New best heuristic value for ff: 25
+[g=2, 19 evaluated, 18 expanded, t=0.0227859s, 23580 KB]
+New best heuristic value for ff: 24
+[g=3, 29 evaluated, 28 expanded, t=0.023835s, 23580 KB]
+New best heuristic value for ff: 23
+[g=4, 38 evaluated, 37 expanded, t=0.0247757s, 23580 KB]
+New best heuristic value for ff: 22
+[g=5, 45 evaluated, 44 expanded, t=0.025507s, 23580 KB]
+New best heuristic value for ff: 21
+[g=6, 59 evaluated, 58 expanded, t=0.0269413s, 23580 KB]
+New best heuristic value for ff: 20
+[g=7, 76 evaluated, 75 expanded, t=0.0286893s, 23580 KB]
+New best heuristic value for ff: 19
+[g=8, 95 evaluated, 94 expanded, t=0.0306236s, 23580 KB]
+New best heuristic value for ff: 18
+[g=10, 123 evaluated, 122 expanded, t=0.0334455s, 23580 KB]
+New best heuristic value for ff: 17
+[g=12, 173 evaluated, 172 expanded, t=0.0384883s, 23580 KB]
+New best heuristic value for ff: 16
+[g=13, 174 evaluated, 173 expanded, t=0.038623s, 23580 KB]
+New best heuristic value for ff: 15
+[g=16, 549 evaluated, 548 expanded, t=0.0758088s, 23580 KB]
+New best heuristic value for ff: 13
+[g=19, 904 evaluated, 903 expanded, t=0.0979633s, 23580 KB]
+New best heuristic value for ff: 11
+[g=21, 1112 evaluated, 1111 expanded, t=0.109877s, 23580 KB]
+New best heuristic value for ff: 10
+[g=23, 1137 evaluated, 1136 expanded, t=0.111252s, 23580 KB]
+New best heuristic value for ff: 9
+[g=24, 1138 evaluated, 1137 expanded, t=0.111328s, 23580 KB]
+New best heuristic value for ff: 8
+[g=25, 1157 evaluated, 1156 expanded, t=0.112369s, 23580 KB]
+New best heuristic value for ff: 6
+[g=29, 3356 evaluated, 3355 expanded, t=0.229538s, 23844 KB]
+New best heuristic value for ff: 4
+[g=34, 288059 evaluated, 288058 expanded, t=14.9578s, 82684 KB]
+New best heuristic value for ff: 3
+[g=35, 288062 evaluated, 288061 expanded, t=14.958s, 82684 KB]
+New best heuristic value for ff: 2
+[g=36, 288077 evaluated, 288076 expanded, t=14.9589s, 82684 KB]
+New best heuristic value for ff: 1
+[g=37, 288081 evaluated, 288080 expanded, t=14.959s, 82684 KB]
+Solution found!
+Actual search time: 14.939s [t=14.9598s]
+drive truck2 depot0 distributor0 (1)
+lift hoist1 crate0 pallet4 depot1 (1)
+load hoist1 crate0 truck1 depot1 (1)
+drive truck1 depot1 distributor1 (1)
+unload hoist3 crate0 truck1 distributor1 (1)
+drop hoist3 crate0 pallet3 distributor1 (1)
+lift hoist1 crate3 crate1 depot1 (1)
+lift hoist5 crate1 pallet1 depot1 (1)
+drive truck3 distributor1 depot1 (1)
+drive truck2 distributor0 depot1 (1)
+load hoist1 crate3 truck3 depot1 (1)
+drive truck3 depot1 depot0 (1)
+drive truck3 depot0 distributor0 (1)
+unload hoist2 crate3 truck3 distributor0 (1)
+drop hoist2 crate3 pallet7 distributor0 (1)
+lift hoist2 crate4 pallet2 distributor0 (1)
+drive truck3 distributor0 depot0 (1)
+lift hoist0 crate5 crate2 depot0 (1)
+load hoist0 crate5 truck3 depot0 (1)
+lift hoist0 crate2 pallet0 depot0 (1)
+load hoist0 crate2 truck3 depot0 (1)
+drive truck3 depot0 depot1 (1)
+unload hoist1 crate2 truck3 depot1 (1)
+drive truck3 depot1 depot0 (1)
+drop hoist1 crate2 pallet1 depot1 (1)
+drive truck3 depot0 distributor0 (1)
+drop hoist2 crate4 crate3 distributor0 (1)
+unload hoist2 crate5 truck3 distributor0 (1)
+drop hoist2 crate5 pallet2 distributor0 (1)
+lift hoist2 crate4 crate3 distributor0 (1)
+load hoist2 crate4 truck3 distributor0 (1)
+lift hoist2 crate3 pallet7 distributor0 (1)
+load hoist2 crate3 truck3 distributor0 (1)
+drive truck3 distributor0 depot0 (1)
+unload hoist0 crate3 truck3 depot0 (1)
+drop hoist0 crate3 pallet0 depot0 (1)
+unload hoist0 crate4 truck3 depot0 (1)
+drop hoist0 crate4 crate3 depot0 (1)
+Plan length: 38 step(s).
+Plan cost: 38
+Expanded 288104 state(s).
+Reopened 0 state(s).
+Evaluated 288105 state(s).
+Evaluations: 288105
+Generated 6647046 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 288105
+Int hash set load factor: 288105/524288 = 0.549517
+Int hash set resizes: 19
+Search time: 14.939s
+Total time: 14.9598s
+Solution found.
+Peak memory: 82684 KB
+Remove intermediate file output.sas
+
+search exit code: 0
+INFO     Running validate.
+INFO     validate stdin: None
+INFO     validate time limit: None
+INFO     validate memory limit: None
+INFO     validate command line string: validate domain.pddl problem.pddl sas_plan
+Checking plan: sas_plan
+Plan executed successfully - checking goal
+Plan valid
+Final value: 38 
+
+Successful plans:
+Value: 38
+ sas_plan 38 
+
+
+validate exit code: 0
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

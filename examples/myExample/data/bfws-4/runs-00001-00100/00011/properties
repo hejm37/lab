@@ -1,0 +1,12 @@
+{
+  "coverage": 1,
+  "error": "plan-found",
+  "expanded": 1324943,
+  "generated": 1587017,
+  "node": "nissan",
+  "planner_exit_code": 0,
+  "time": [
+    "72.5431"
+  ],
+  "trivially_unsolvable": 0
+}

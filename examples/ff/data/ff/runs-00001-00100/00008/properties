@@ -1,0 +1,8 @@
+{
+  "coverage": 0,
+  "error": "unsolvable-or-error",
+  "node": "nissan",
+  "planner_exit_code": 1,
+  "times": [],
+  "trivially_unsolvable": 1
+}

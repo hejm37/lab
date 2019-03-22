@@ -1,0 +1,12 @@
+
+ff: parsing domain file
+domain 'MYSTERY-STRIPS' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-MYSTY-X-7' defined
+ ... done.
+
+
+ff: goal can be simplified to FALSE. No plan will solve it
+
+Running FF parser

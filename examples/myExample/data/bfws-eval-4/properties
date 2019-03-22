@@ -1,0 +1,444 @@
+{
+  "k-BFWS-floortile-sat14-strips-p01-4-3-2.pddl": {
+    "algorithm": "k-BFWS",
+    "costs": 50,
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 74754,
+    "generated": 101878,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-4-3-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p01-4-3-2.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "time": [
+      "1.58388"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p01-5-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 739641,
+    "generated": 889013,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-5-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p01-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "time": [
+      "32.1981"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p01-5-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 2012387,
+    "generated": 2423724,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-5-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p01-5-5-2.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "time": [
+      "120.239"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p01-6-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 1489679,
+    "generated": 1784674,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-6-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p01-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "time": [
+      "82.8548"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p01-6-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 3563220,
+    "generated": 4238645,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-6-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p01-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "time": [
+      "263.667"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p01-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p01-6-5-3.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p01-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p02-5-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 726950,
+    "generated": 882880,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p02-5-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p02-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "time": [
+      "32.4152"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p02-6-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 1465916,
+    "generated": 1737380,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p02-6-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p02-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "time": [
+      "80.2201"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p02-6-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 3525684,
+    "generated": 4226392,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p02-6-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p02-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "time": [
+      "264.058"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p02-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p02-6-5-3.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p02-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p03-6-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 1324943,
+    "generated": 1587017,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p03-6-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p03-6-4-2.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "time": [
+      "72.5431"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p03-6-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 3545065,
+    "generated": 4208326,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p03-6-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p03-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "time": [
+      "269.607"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p03-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p03-6-5-3.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p03-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p04-5-4-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 746816,
+    "generated": 907873,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p04-5-4-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p04-5-4-2.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "time": [
+      "33.5475"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p04-5-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 1880679,
+    "generated": 2262409,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p04-5-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p04-5-5-2.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "time": [
+      "116.903"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p04-6-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 3437387,
+    "generated": 4141901,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p04-6-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p04-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "time": [
+      "261.598"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p04-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p04-6-5-3.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p04-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p05-4-3-2.pddl": {
+    "algorithm": "k-BFWS",
+    "costs": 42,
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 45466,
+    "generated": 72075,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p05-4-3-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p05-4-3-2.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "time": [
+      "0.890701"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p05-6-5-2.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 1,
+    "domain": "floortile-sat14-strips",
+    "error": "plan-found",
+    "expanded": 3636174,
+    "generated": 4317937,
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p05-6-5-2.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": 0,
+    "problem": "p05-6-5-2.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "time": [
+      "282.29"
+    ],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  },
+  "k-BFWS-floortile-sat14-strips-p05-6-5-3.pddl": {
+    "algorithm": "k-BFWS",
+    "coverage": 0,
+    "domain": "floortile-sat14-strips",
+    "error": "unsolvable-or-error",
+    "id": [
+      "k-BFWS",
+      "floortile-sat14-strips",
+      "p05-6-5-3.pddl"
+    ],
+    "memory_limit": 4096,
+    "node": "nissan",
+    "planner_exit_code": -24,
+    "problem": "p05-6-5-3.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "time": [],
+    "time_limit": 300,
+    "trivially_unsolvable": 0
+  }
+}

@@ -1,0 +1,1 @@
+../../../../../../downward-benchmarks/mystery/domain.pddl

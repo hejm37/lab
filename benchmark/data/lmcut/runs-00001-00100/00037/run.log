@@ -1,0 +1,130 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.99s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.004s wall-clock]
+Preparing model... [0.010s CPU, 0.003s wall-clock]
+Generated 61 rules.
+Computing model... [0.120s CPU, 0.121s wall-clock]
+4969 relevant atoms
+4045 auxiliary atoms
+9014 final queue length
+19546 total queue pushes
+Completing instantiation... [0.330s CPU, 0.336s wall-clock]
+Instantiating: [0.460s CPU, 0.467s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.020s CPU, 0.017s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.001s wall-clock]
+Choosing groups...
+47 uncovered facts
+Choosing groups: [0.000s CPU, 0.004s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.040s CPU, 0.044s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.010s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.016s wall-clock]
+Translating task: [0.350s CPU, 0.352s wall-clock]
+5910 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+64 propositions removed
+Detecting unreachable propositions: [0.190s CPU, 0.186s wall-clock]
+Reordering and filtering variables...
+63 of 63 variables necessary.
+46 of 63 mutex groups necessary.
+3990 of 3990 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.060s CPU, 0.067s wall-clock]
+Translator variables: 63
+Translator derived variables: 0
+Translator facts: 659
+Translator goal facts: 15
+Translator mutex groups: 46
+Translator total mutex groups size: 811
+Translator operators: 3990
+Translator axioms: 0
+Translator task size: 37848
+Translator peak memory: 86412 KB
+Writing output... [0.060s CPU, 0.054s wall-clock]
+Done! [1.190s CPU, 1.189s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 298.79s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file sas_plan < output.sas
+reading input... [t=1.692e-05s]
+done reading input! [t=0.0205972s]
+Initializing landmark cut heuristic...
+Building successor generator...done! [t=0.0247974s]
+peak memory difference for successor generator creation: 436 KB
+time for successor generation creation: 0.0012661s
+Variables: 63
+FactPairs: 659
+Bytes per state: 20
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for lmcut: 27
+[g=0, 1 evaluated, 0 expanded, t=0.0274625s, 25796 KB]
+f = 27 [1 evaluated, 0 expanded, t=0.0274967s, 25796 KB]
+Initial heuristic value for lmcut: 27
+pruning method: none
+New best heuristic value for lmcut: 26
+[g=1, 15 evaluated, 1 expanded, t=0.0614011s, 25796 KB]
+New best heuristic value for lmcut: 25
+[g=2, 34 evaluated, 2 expanded, t=0.10644s, 25796 KB]
+New best heuristic value for lmcut: 24
+[g=3, 38 evaluated, 3 expanded, t=0.115821s, 25796 KB]
+f = 28 [205 evaluated, 16 expanded, t=0.523072s, 25796 KB]
+f = 29 [698 evaluated, 75 expanded, t=1.7219s, 25796 KB]
+New best heuristic value for lmcut: 23
+[g=6, 1518 evaluated, 161 expanded, t=3.68817s, 25796 KB]
+New best heuristic value for lmcut: 22
+[g=7, 1713 evaluated, 180 expanded, t=4.13968s, 25796 KB]
+New best heuristic value for lmcut: 21
+[g=5, 2779 evaluated, 342 expanded, t=7.01202s, 25796 KB]
+New best heuristic value for lmcut: 20
+[g=6, 2797 evaluated, 343 expanded, t=7.05109s, 25796 KB]
+New best heuristic value for lmcut: 19
+[g=9, 3339 evaluated, 391 expanded, t=8.23264s, 25796 KB]
+New best heuristic value for lmcut: 18
+[g=11, 4200 evaluated, 471 expanded, 1 reopened, t=10.1598s, 25796 KB]
+New best heuristic value for lmcut: 17
+[g=11, 6771 evaluated, 765 expanded, 16 reopened, t=15.9841s, 25932 KB]
+f = 30 [7309 evaluated, 813 expanded, 16 reopened, t=17.1521s, 25932 KB]
+New best heuristic value for lmcut: 16
+[g=14, 7355 evaluated, 816 expanded, 16 reopened, t=17.2377s, 25932 KB]
+New best heuristic value for lmcut: 15
+[g=15, 7369 evaluated, 817 expanded, 16 reopened, t=17.2621s, 25932 KB]
+f = 31 [80283 evaluated, 9146 expanded, 700 reopened, t=178.626s, 30084 KB]
+New best heuristic value for lmcut: 14
+[g=16, 85913 evaluated, 9584 expanded, 703 reopened, t=189.33s, 30216 KB]
+Peak memory: 33624 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+
+search exit code: 23
+Driver aborting after search
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

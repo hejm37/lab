@@ -1,0 +1,133 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.99s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 61 rules.
+Computing model... [0.070s CPU, 0.074s wall-clock]
+3025 relevant atoms
+2690 auxiliary atoms
+5715 final queue length
+11087 total queue pushes
+Completing instantiation... [0.180s CPU, 0.176s wall-clock]
+Instantiating: [0.260s CPU, 0.258s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.010s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.012s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+44 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.030s CPU, 0.031s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.009s wall-clock]
+Translating task: [0.190s CPU, 0.189s wall-clock]
+2960 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+56 propositions removed
+Detecting unreachable propositions: [0.080s CPU, 0.084s wall-clock]
+Reordering and filtering variables...
+46 of 46 variables necessary.
+34 of 46 mutex groups necessary.
+2352 of 2352 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.040s CPU, 0.033s wall-clock]
+Translator variables: 46
+Translator derived variables: 0
+Translator facts: 388
+Translator goal facts: 7
+Translator mutex groups: 34
+Translator total mutex groups size: 482
+Translator operators: 2352
+Translator axioms: 0
+Translator task size: 19963
+Translator peak memory: 73384 KB
+Writing output... [0.030s CPU, 0.030s wall-clock]
+Done! [0.630s CPU, 0.637s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299.34s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'lazy_greedy([ff()])' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.832e-05s]
+done reading input! [t=0.018542s]
+Simplifying 9328 unary operators... done! [9328 unary operators]
+time to simplify: 0.0108709s
+Initializing additive heuristic...
+Initializing FF heuristic...
+Building successor generator...done! [t=0.0336288s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.00130813s
+Variables: 46
+FactPairs: 388
+Bytes per state: 16
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for ff: 34
+[g=0, 1 evaluated, 0 expanded, t=0.0340097s, 24556 KB]
+Initial heuristic value for ff: 34
+New best heuristic value for ff: 33
+[g=1, 3 evaluated, 2 expanded, t=0.0344096s, 24556 KB]
+New best heuristic value for ff: 32
+[g=2, 31 evaluated, 30 expanded, t=0.0389227s, 24556 KB]
+New best heuristic value for ff: 31
+[g=3, 60 evaluated, 59 expanded, t=0.044098s, 24556 KB]
+New best heuristic value for ff: 30
+[g=4, 85 evaluated, 84 expanded, t=0.0482152s, 24556 KB]
+New best heuristic value for ff: 29
+[g=6, 408 evaluated, 407 expanded, t=0.0811309s, 24556 KB]
+New best heuristic value for ff: 28
+[g=7, 437 evaluated, 436 expanded, t=0.0839841s, 24556 KB]
+New best heuristic value for ff: 27
+[g=8, 467 evaluated, 466 expanded, t=0.0868977s, 24556 KB]
+New best heuristic value for ff: 25
+[g=11, 1106 evaluated, 1105 expanded, t=0.148897s, 24556 KB]
+New best heuristic value for ff: 23
+[g=14, 2014 evaluated, 2013 expanded, t=0.236633s, 24556 KB]
+New best heuristic value for ff: 22
+[g=16, 2080 evaluated, 2079 expanded, t=0.243038s, 24556 KB]
+New best heuristic value for ff: 20
+[g=19, 3128 evaluated, 3127 expanded, t=0.342176s, 24820 KB]
+New best heuristic value for ff: 19
+[g=21, 3165 evaluated, 3164 expanded, t=0.345791s, 24820 KB]
+New best heuristic value for ff: 17
+[g=24, 4353 evaluated, 4352 expanded, t=0.458265s, 25248 KB]
+New best heuristic value for ff: 15
+[g=27, 8895 evaluated, 8894 expanded, t=0.886238s, 26708 KB]
+New best heuristic value for ff: 14
+[g=28, 8901 evaluated, 8900 expanded, t=0.886895s, 26708 KB]
+New best heuristic value for ff: 12
+[g=31, 9411 evaluated, 9410 expanded, t=0.936204s, 26840 KB]
+Peak memory: 980596 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+
+search exit code: 23
+Driver aborting after search
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

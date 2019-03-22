@@ -1,0 +1,13 @@
+2019-03-05 19:41:26,557 INFO     node: nissan
+2019-03-05 19:41:37,511 INFO     planner wall-clock time: 10.95s
+2019-03-05 19:41:37,511 INFO     planner exit code: 0
+2019-03-05 19:41:37,513 INFO     remove-output-sas wall-clock time: 0.00s
+2019-03-05 19:41:37,513 INFO     remove-output-sas exit code: 0
+2019-03-05 19:41:37,540 INFO     exitcode_parser wall-clock time: 0.03s
+2019-03-05 19:41:37,540 INFO     exitcode_parser exit code: 0
+2019-03-05 19:41:37,570 INFO     translator_parser wall-clock time: 0.03s
+2019-03-05 19:41:37,570 INFO     translator_parser exit code: 0
+2019-03-05 19:41:37,600 INFO     single_search_parser wall-clock time: 0.03s
+2019-03-05 19:41:37,601 INFO     single_search_parser exit code: 0
+2019-03-05 19:41:37,628 INFO     planner_parser wall-clock time: 0.03s
+2019-03-05 19:41:37,628 INFO     planner_parser exit code: 0

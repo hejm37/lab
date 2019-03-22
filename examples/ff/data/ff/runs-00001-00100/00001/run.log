@@ -1,0 +1,49 @@
+
+ff: parsing domain file
+domain 'GRID' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-GRID-Y-1' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   12 into depth [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1][2]
+                                   8            [1][2]
+                                   6            [1]
+                                   5            [1][2]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: MOVE NODE2-4 NODE1-4
+        1: MOVE NODE1-4 NODE0-4
+        2: MOVE NODE0-4 NODE0-3
+        3: MOVE NODE0-3 NODE0-2
+        4: PICKUP NODE0-2 KEY3
+        5: MOVE NODE0-2 NODE0-3
+        6: MOVE NODE0-3 NODE1-3
+        7: UNLOCK NODE1-3 NODE2-3 KEY3 SQUARE
+        8: MOVE NODE1-3 NODE2-3
+        9: PICKUP-AND-LOOSE NODE2-3 KEY0 KEY3
+       10: MOVE NODE2-3 NODE1-3
+       11: MOVE NODE1-3 NODE1-2
+       12: MOVE NODE1-2 NODE1-1
+       13: PUTDOWN NODE1-1 KEY0
+     
+
+time spent:    0.00 seconds instantiating 2609 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 293 facts and 2609 actions
+               0.00 seconds creating final representation with 276 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 20 states, to a max depth of 2
+               0.00 seconds total time
+
+Running FF parser

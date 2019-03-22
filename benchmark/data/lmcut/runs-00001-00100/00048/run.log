@@ -1,0 +1,206 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299.98s
+INFO     translator memory limit: 8192 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 61 rules.
+Computing model... [0.020s CPU, 0.023s wall-clock]
+841 relevant atoms
+825 auxiliary atoms
+1666 final queue length
+3072 total queue pushes
+Completing instantiation... [0.040s CPU, 0.043s wall-clock]
+Instantiating: [0.070s CPU, 0.073s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.009s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.004s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+20 uncovered facts
+Choosing groups: [0.010s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.020s CPU, 0.017s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.002s wall-clock]
+Translating task: [0.040s CPU, 0.046s wall-clock]
+720 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+30 propositions removed
+Detecting unreachable propositions: [0.030s CPU, 0.021s wall-clock]
+Reordering and filtering variables...
+32 of 32 variables necessary.
+22 of 32 mutex groups necessary.
+540 of 540 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.010s wall-clock]
+Translator variables: 32
+Translator derived variables: 0
+Translator facts: 186
+Translator goal facts: 6
+Translator mutex groups: 22
+Translator total mutex groups size: 222
+Translator operators: 540
+Translator axioms: 0
+Translator task size: 5114
+Translator peak memory: 61220 KB
+Writing output... [0.000s CPU, 0.007s wall-clock]
+Done! [0.170s CPU, 0.182s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299.78s
+INFO     search memory limit: 8192 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/benchmark/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'lazy_greedy([ff()])' --internal-plan-file sas_plan < output.sas
+reading input... [t=1.64e-05s]
+done reading input! [t=0.00282432s]
+Simplifying 2364 unary operators... done! [2364 unary operators]
+time to simplify: 0.00154545s
+Initializing additive heuristic...
+Initializing FF heuristic...
+Building successor generator...done! [t=0.00572629s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.00019617s
+Variables: 32
+FactPairs: 186
+Bytes per state: 12
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for ff: 19
+[g=0, 1 evaluated, 0 expanded, t=0.00586845s, 22700 KB]
+Initial heuristic value for ff: 19
+New best heuristic value for ff: 18
+[g=1, 7 evaluated, 6 expanded, t=0.00604931s, 22700 KB]
+New best heuristic value for ff: 15
+[g=3, 27 evaluated, 26 expanded, t=0.00659875s, 22700 KB]
+New best heuristic value for ff: 14
+[g=4, 28 evaluated, 27 expanded, t=0.00664528s, 22700 KB]
+New best heuristic value for ff: 13
+[g=8, 161 evaluated, 160 expanded, t=0.00984903s, 22700 KB]
+New best heuristic value for ff: 12
+[g=9, 167 evaluated, 166 expanded, t=0.0100149s, 22700 KB]
+New best heuristic value for ff: 11
+[g=10, 173 evaluated, 172 expanded, t=0.0101718s, 22700 KB]
+New best heuristic value for ff: 10
+[g=14, 518 evaluated, 517 expanded, t=0.0186575s, 22700 KB]
+New best heuristic value for ff: 9
+[g=15, 524 evaluated, 523 expanded, t=0.0188419s, 22700 KB]
+New best heuristic value for ff: 8
+[g=16, 527 evaluated, 526 expanded, t=0.0189335s, 22700 KB]
+New best heuristic value for ff: 7
+[g=17, 534 evaluated, 533 expanded, t=0.0191137s, 22700 KB]
+New best heuristic value for ff: 6
+[g=25, 1819 evaluated, 1818 expanded, t=0.0514909s, 22700 KB]
+New best heuristic value for ff: 5
+[g=32, 12423 evaluated, 12422 expanded, t=0.329143s, 23500 KB]
+New best heuristic value for ff: 4
+[g=40, 21452 evaluated, 21451 expanded, t=0.565408s, 24288 KB]
+New best heuristic value for ff: 3
+[g=41, 21456 evaluated, 21455 expanded, t=0.565576s, 24288 KB]
+New best heuristic value for ff: 2
+[g=42, 21464 evaluated, 21463 expanded, t=0.565767s, 24288 KB]
+New best heuristic value for ff: 1
+[g=43, 21467 evaluated, 21466 expanded, t=0.565828s, 24288 KB]
+Solution found!
+Actual search time: 0.560124s [t=0.565939s]
+lift hoist2 crate6 crate5 distributor1 (1)
+load hoist2 crate6 truck1 distributor1 (1)
+drive truck1 distributor1 distributor0 (1)
+unload hoist1 crate6 truck1 distributor0 (1)
+lift hoist2 crate5 crate3 distributor1 (1)
+load hoist2 crate5 truck0 distributor1 (1)
+lift hoist2 crate3 pallet2 distributor1 (1)
+load hoist2 crate3 truck0 distributor1 (1)
+unload hoist2 crate5 truck0 distributor1 (1)
+drop hoist2 crate5 pallet2 distributor1 (1)
+load hoist1 crate6 truck1 distributor0 (1)
+lift hoist1 crate2 pallet1 distributor0 (1)
+load hoist1 crate2 truck1 distributor0 (1)
+unload hoist1 crate6 truck1 distributor0 (1)
+drop hoist1 crate6 pallet1 distributor0 (1)
+unload hoist1 crate2 truck1 distributor0 (1)
+drop hoist1 crate2 crate6 distributor0 (1)
+drive truck1 distributor0 depot0 (1)
+unload hoist2 crate3 truck0 distributor1 (1)
+lift hoist0 crate7 crate4 depot0 (1)
+load hoist0 crate7 truck1 depot0 (1)
+lift hoist0 crate4 crate1 depot0 (1)
+load hoist0 crate4 truck1 depot0 (1)
+lift hoist1 crate2 crate6 distributor0 (1)
+lift hoist0 crate1 crate0 depot0 (1)
+load hoist0 crate1 truck1 depot0 (1)
+unload hoist0 crate4 truck1 depot0 (1)
+drop hoist1 crate2 crate6 distributor0 (1)
+drop hoist0 crate4 crate0 depot0 (1)
+unload hoist0 crate7 truck1 depot0 (1)
+drive truck1 depot0 distributor0 (1)
+unload hoist1 crate1 truck1 distributor0 (1)
+drive truck1 distributor0 depot0 (1)
+load hoist0 crate7 truck1 depot0 (1)
+lift hoist0 crate4 crate0 depot0 (1)
+load hoist0 crate4 truck1 depot0 (1)
+lift hoist0 crate0 pallet0 depot0 (1)
+load hoist0 crate0 truck1 depot0 (1)
+unload hoist0 crate7 truck1 depot0 (1)
+drop hoist0 crate7 pallet0 depot0 (1)
+unload hoist0 crate4 truck1 depot0 (1)
+drop hoist0 crate4 crate7 depot0 (1)
+unload hoist0 crate0 truck1 depot0 (1)
+drop hoist0 crate0 crate4 depot0 (1)
+Plan length: 44 step(s).
+Plan cost: 44
+Expanded 21474 state(s).
+Reopened 0 state(s).
+Evaluated 21475 state(s).
+Evaluations: 21475
+Generated 185418 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 21475
+Int hash set load factor: 21475/32768 = 0.655365
+Int hash set resizes: 15
+Search time: 0.560129s
+Total time: 0.56594s
+Solution found.
+Peak memory: 24288 KB
+Remove intermediate file output.sas
+
+search exit code: 0
+INFO     Running validate.
+INFO     validate stdin: None
+INFO     validate time limit: None
+INFO     validate memory limit: None
+INFO     validate command line string: validate domain.pddl problem.pddl sas_plan
+Checking plan: sas_plan
+Plan executed successfully - checking goal
+Plan valid
+Final value: 44 
+
+Successful plans:
+Value: 44
+ sas_plan 44 
+
+
+validate exit code: 0
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

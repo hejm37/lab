@@ -1,0 +1,162 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1799.99s
+INFO     translator memory limit: 3584 MB
+INFO     translator command line string: /home/harry/anaconda3/envs/python2/bin/python /home/harry/Desktop/planning/SPARKLE/lab/examples/data/lmcut/code-282538f969a9/builds/release/bin/translate/translate.py domain.pddl problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 24 rules.
+Computing model... [0.000s CPU, 0.002s wall-clock]
+81 relevant atoms
+60 auxiliary atoms
+141 final queue length
+180 total queue pushes
+Completing instantiation... [0.000s CPU, 0.002s wall-clock]
+Instantiating: [0.010s CPU, 0.006s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.000s CPU, 0.002s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.002s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.002s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+3 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Reordering and filtering variables...
+7 of 7 variables necessary.
+4 of 7 mutex groups necessary.
+34 of 34 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 7
+Translator derived variables: 0
+Translator facts: 24
+Translator goal facts: 4
+Translator mutex groups: 4
+Translator total mutex groups size: 16
+Translator operators: 34
+Translator axioms: 0
+Translator task size: 233
+Translator peak memory: 57112 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.010s CPU, 0.014s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1799.96s
+INFO     search memory limit: 3584 MB
+INFO     search command line string: /home/harry/Desktop/planning/SPARKLE/lab/examples/data/lmcut/code-282538f969a9/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file sas_plan < output.sas
+reading input... [t=1.803e-05s]
+done reading input! [t=0.00019363s]
+Initializing landmark cut heuristic...
+Building successor generator...done! [t=0.000997591s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 1.904e-05s
+Variables: 7
+FactPairs: 24
+Bytes per state: 4
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for lmcut: 9
+[g=0, 1 evaluated, 0 expanded, t=0.00109333s, 22144 KB]
+f = 9 [1 evaluated, 0 expanded, t=0.00111311s, 22144 KB]
+Initial heuristic value for lmcut: 9
+pruning method: none
+New best heuristic value for lmcut: 7
+[g=1, 3 evaluated, 1 expanded, t=0.00115654s, 22144 KB]
+New best heuristic value for lmcut: 6
+[g=3, 30 evaluated, 9 expanded, t=0.00137295s, 22144 KB]
+New best heuristic value for lmcut: 5
+[g=4, 31 evaluated, 10 expanded, t=0.00140148s, 22144 KB]
+f = 10 [100 evaluated, 65 expanded, t=0.00189258s, 22144 KB]
+f = 11 [134 evaluated, 92 expanded, t=0.00214107s, 22144 KB]
+New best heuristic value for lmcut: 4
+[g=7, 135 evaluated, 93 expanded, t=0.00216819s, 22144 KB]
+New best heuristic value for lmcut: 3
+[g=8, 136 evaluated, 94 expanded, t=0.00219337s, 22144 KB]
+New best heuristic value for lmcut: 2
+[g=9, 156 evaluated, 104 expanded, t=0.00231892s, 22144 KB]
+New best heuristic value for lmcut: 1
+[g=10, 157 evaluated, 105 expanded, t=0.00234299s, 22144 KB]
+New best heuristic value for lmcut: 0
+[g=11, 162 evaluated, 106 expanded, t=0.00238099s, 22144 KB]
+Solution found!
+Actual search time: 0.00126749s [t=0.00240118s]
+pick ball1 rooma left (1)
+pick ball2 rooma right (1)
+move rooma roomb (1)
+drop ball1 roomb left (1)
+drop ball2 roomb right (1)
+move roomb rooma (1)
+pick ball3 rooma left (1)
+pick ball4 rooma right (1)
+move rooma roomb (1)
+drop ball3 roomb left (1)
+drop ball4 roomb right (1)
+Plan length: 11 step(s).
+Plan cost: 11
+Expanded 107 state(s).
+Reopened 0 state(s).
+Evaluated 162 state(s).
+Evaluations: 162
+Generated 366 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 92 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 134 state(s).
+Generated until last jump: 316 state(s).
+Number of registered states: 162
+Int hash set load factor: 162/256 = 0.632812
+Int hash set resizes: 8
+Search time: 0.00134533s
+Total time: 0.00240353s
+Solution found.
+Peak memory: 22144 KB
+Remove intermediate file output.sas
+
+search exit code: 0
+INFO     Running validate.
+INFO     validate stdin: None
+INFO     validate time limit: None
+INFO     validate memory limit: None
+INFO     validate command line string: validate domain.pddl problem.pddl sas_plan
+Checking plan: sas_plan
+Plan executed successfully - checking goal
+Plan valid
+Final value: 11 
+
+Successful plans:
+Value: 11
+ sas_plan 11 
+
+
+validate exit code: 0
+Running exit code parser
+Running translator parser
+Running single search parser
+Running planner parser

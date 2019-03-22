@@ -1,0 +1,16 @@
+~$
+\.pyc$
+.cache/v/cache/lastfailed$
+^build/
+^docs/_build/
+^docs/driver.err$
+^docs/driver.log$
+^docs/run.err$
+^docs/run.log$
+^examples/data/
+^examples/ff/data/
+^examples/pi/data/
+^examples/planner/data/
+^examples/simple/data/
+^examples/vertex-cover/data/
+^lab.egg-info/

@@ -1,0 +1,16 @@
+{
+  "algorithms": [
+    "blind",
+    "lmcut",
+    "ff",
+    "ff_preferred",
+    "lama-2011"
+  ],
+  "experiment_file": "lmcut.py",
+  "runs": 110,
+  "suite": {
+    "/home/harry/Desktop/planning/SPARKLE/downward-benchmarks": [
+      "depot"
+    ]
+  }
+}
